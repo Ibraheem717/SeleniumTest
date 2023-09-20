@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="UserTest" verbose="1">
+
+<!--    Reject cookies : "onetrust-reject-all-handler" -->
+<!--    Accept cookies : "onetrust-accept-btn-handler"-->
+
+<!--    <test name="RejectCookies">-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <parameter name="css" value="onetrust-reject-all-handler"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="rejectCookies"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="IGNReviewTest.Home" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="AcceptCookies">-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <parameter name="css" value="onetrust-accept-btn-handler"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="acceptCookies"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="IGNReviewTest.Home" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="SearchOtherGame">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="search" value="elden ring"/>
+        <parameter name="tab" value="All Reviews"/>
+        <classes>
+            <class name="IGNReviewTest.Navigation" />
+        </classes>
+    </test>
+
+</suite>
